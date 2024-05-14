@@ -1,0 +1,37 @@
+\documentclass[]{article}
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage[table]{xcolor} % for cell colors
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{fontawesome5}
+\usepackage{caption}
+\usepackage[margin=0.5in]{geometry}
+
+
+\begin{document}
+
+\pagestyle{empty} 
+
+\begin{table}[!htp]\centering
+	\renewcommand{\arraystretch}{2}
+	\caption*{List of packages implementing functions for bipartite network randomization. This is a dynamic table associated to the paper \textit{Pattern detection in bipartite networks: a review of terminology, applications and methods}, by Zachary Neal, Annabel Cadieux, Diego Garlaschelli, Nicholas J. Gotelli, Fabio Saracco, Tiziano Squartini, Shade T. Shutters, Werner Ulrich, Guanyang Wang and Giovanni Strona. Last updated \today.}\label{tab: }
+	\scriptsize
+	\begin{tabularx}{\columnwidth}{X|X|X|X|X}%{ p{6em} p{6em}  p{6em}  p{15em} p{40em} }%{lrrrrr}\toprule
+		\cellcolor[HTML]{A8A8A8}\textbf{Algorithm} &\cellcolor[HTML]{A8A8A8}\textbf{Language} &\cellcolor[HTML]{A8A8A8}\textbf{Package} &\cellcolor[HTML]{A8A8A8}\textbf{Notes} &\cellcolor[HTML]{A8A8A8}\textbf{URL} \\[2pt]\midrule\hline
+		FF &\faPython Python &\textsc{networkit} &Curveball implementation. &\href{https://networkit.github.io/dev-docs/notebooks/Randomization.html}{GitHub hyperlink} \\[2pt] \hline
+		EF FE FF &\faRProject &\textsc{picante} & &\href{https://rdrr.io/cran/picante/man/randomizeSample.html}{CRAN hyperlink} \\[2pt] \hline
+		FF &\faPython Python &\textsc{anuran} & &\href{https://github.com/ramellose/anuran}{GitHub hyperlink} \\[2pt] \hline
+		PP &\faPython Python &\textsc{bicm} &\textsc{bicm} implements both the binary and the weighted version of the Bipartite Configuration Model. It also implements the validated projection of binary, bipartite networks. &\href{https://github.com/mat701/BiCM}{GitHub hyperlink} \\[2pt] \hline
+		PP &\faRProject  &\textsc{Bipartite.R} &\textsc{Bipartite.R} is an R script (to not be confounded with the \textsc{bipartite} package) that implements the binary, weighted and enhanced versions of the Bipartite Configuration Model.  &\href{https://figshare.com/articles/software/Fluctuating\_ecological\_networks\_a\_synthesis\_of\_maximum-entropy\_approaches\_for\_pattern\_detection\_and\_process\_inference\_-\_Computer\_codes\_and\_Data\_examples/20531655/1}{Figshare hyperlink} \\[2pt] \hline
+		PP &\faPython Python &\textsc{fit\_bicm} &\textsc{fit\_bicm} implements the binary, weighted and enhanced versions of the Bipartite Configuration Model. &\href{https://figshare.com/articles/software/Fluctuating\_ecological\_networks\_a\_synthesis\_of\_maximum-entropy\_approaches\_for\_pattern\_detection\_and\_process\_inference\_-\_Computer\_codes\_and\_Data\_examples/20531655/1}{Figshare hyperlink} \\[2pt] \hline
+		PP &\faPython Python &\textsc{nem}tropy &\textsc{nem}tropy  implements a set of monopartite and bipartite benchmarks, defined by the maximization of Shannon entropy under soft constraints. \textsc{nem}tropy  includes \textsc{bicm}. &\href{https://github.com/nicoloval/NEMtropy}{GitHub hyperlink} \\[2pt] \hline
+		FF EE PP &\faRProject  &\textsc{incidentally} & &\href{https://rdrr.io/github/zpneal/incidentally/}{GitHub hyperlink} \\[2pt] \hline
+		EE FE EF FF PP EP FP PE PF &\faRProject  &\textsc{ecosimr} & &\href{https://rdrr.io/cran/EcoSimR/man/sim9.html}{CRAN hyperlink} \\[2pt] \hline
+		PE EP FF EE &\faRProject  &\textsc{vegan} & &\href{https://rdrr.io/rforge/vegan/man/commsim.html}{RForge hyperlink} \\[2pt] \hline
+		FF EE  &\faRProject  &\textsc{bipartite} & &\href{https://cran.r-project.org/web/packages/bipartite/index.html}{CRAN hyperlink} \\[2pt] \hline
+		FF PP FE EF &\faRProject  &\textsc{backbone} & &\href{https://cran.r-project.org/web/packages/backbone/vignettes/backbone.html}{CRAN hyperlink} \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+\end{document}
